@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack');
 
 const isDev = process.env.NODE_ENV === 'development'
-console.log(process.env.NODE_ENV);
 
 module.exports = {
   // 入口文件

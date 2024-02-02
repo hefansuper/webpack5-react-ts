@@ -34,6 +34,7 @@ function App() {
           <img src={bigImg} alt="大于于10kb的图片" />
           <div className='smallImg'></div> {/* 小图片背景容器 */}
           <div className='bigImg'></div> {/* 大图片背景容器 */}
+          <div className='btn'>11111</div>
           <Suspense fallback={null}><PreloadDemo /></Suspense>
           <Suspense fallback={null}><PreFetchDemo /></Suspense>
         </>
