@@ -4,6 +4,8 @@
   "description": "使用webpack5从零搭建完整的react18+ts构建环境",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf node_modules dist",
+    "preinstall": "npx only-allow yarn",
     "start:dev": "cross-env NODE_ENV=development BASE_ENV=development webpack-dev-server -c build/webpack.dev.js",
     "start:test": "cross-env NODE_ENV=development BASE_ENV=test webpack-dev-server -c build/webpack.dev.js",
     "start:pre": "cross-env NODE_ENV=development BASE_ENV=pre webpack-dev-server -c build/webpack.dev.js",
@@ -66,6 +68,7 @@
   },
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.22.0"
   }
 }
