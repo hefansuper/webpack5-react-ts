@@ -1,7 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
-import helloRoutes from "./hello";
+import HelloRoutes from "./Hello";
+import NotFoundRoutes from "./NotFound";
 
-const routers = [...helloRoutes];
+const routers = [...HelloRoutes, ...NotFoundRoutes];
 
 export default createBrowserRouter(routers);

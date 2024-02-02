@@ -5,7 +5,7 @@ const HelloPage = lazy(
     import(
       /* webpackChunkName: "FirstPage" */
       /*webpackPreload: true*/
-      "@/pages/hello"
+      "@/pages/Hello"
     )
 );
 
