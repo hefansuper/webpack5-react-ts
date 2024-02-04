@@ -1,6 +1,6 @@
 import React, { lazy } from "react";
 
-const HelloPage = lazy(
+const FirstPage = lazy(
   () =>
     import(
       /* webpackChunkName: "FirstPage" */
@@ -11,7 +11,7 @@ const HelloPage = lazy(
 
 export default [
   {
-    path: "/hello",
-    element: <HelloPage />,
+    path: "/firstPage",
+    element: <FirstPage />,
   },
 ];

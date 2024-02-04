@@ -9,9 +9,18 @@ const NotFoundPage = lazy(
     )
 );
 
+const FirstPage = lazy(
+  () =>
+    import(
+      /* webpackChunkName: "FirstPage" */
+      /*webpackPreload: true*/
+      "@/pages/Hello"
+    )
+);
+
 export default [
   {
     path: "*",
-    element: <NotFoundPage />,
+    element: <FirstPage />,
   },
 ];
