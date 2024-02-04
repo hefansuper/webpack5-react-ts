@@ -4,11 +4,11 @@ import Header from '@/layout/Header';
 
 import styles from "./index.less";
 
-const HelloPage = () => {
+const FirstPage = () => {
   return <div className={styles.helloPageWrapper}>
     <Header />
-    <div>HelloPage</div>
+    <div>FirstPage</div>
     <Footer />
   </div>;
 }
-export default React.memo(HelloPage);
+export default React.memo(FirstPage);
