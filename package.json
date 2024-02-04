@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf node_modules dist",
-    "preinstall": "npx only-allow yarn",
     "start:dev": "cross-env NODE_ENV=development BASE_ENV=development webpack-dev-server -c build/webpack.dev.js",
     "start:test": "cross-env NODE_ENV=development BASE_ENV=test webpack-dev-server -c build/webpack.dev.js",
     "start:pre": "cross-env NODE_ENV=development BASE_ENV=pre webpack-dev-server -c build/webpack.dev.js",
