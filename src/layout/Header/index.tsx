@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './index.less';
+import styles from './index.less';
 
 const Header = () => {
-  return <div className="headerWrapper">
+  return <div className={styles.headerWrapper}>
     <div>Header.....</div>
   </div>;
 }

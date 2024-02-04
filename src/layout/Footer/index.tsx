@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './index.less';
+import styles from './index.less';
 
 const Footer = () => {
-  return <div className="footerWrapper">
+  return <div className={styles.footerWrapper}>
     <div>Footer.....</div>
   </div>;
 }

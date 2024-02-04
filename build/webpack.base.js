@@ -34,9 +34,23 @@ module.exports = {
         include: [path.resolve(__dirname, "../src")],
         use: [
           isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-          "css-loader",
+          // "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              // modules: {
+              //   // localIdentName: "[local]__[hash:base64:4]",
+              // },
+              modules: true,
+            },
+          },
           "postcss-loader",
-          "less-loader",
+          {
+            loader: "less-loader",
+            options: {
+              lessOptions: { javascriptEnabled: true },
+            },
+          },
         ],
       },
       {
