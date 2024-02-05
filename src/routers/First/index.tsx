@@ -1,17 +1,17 @@
-import React, { lazy } from "react";
+import React, { lazy } from 'react';
 
 const FirstPage = lazy(
   () =>
     import(
       /* webpackChunkName: "FirstPage" */
       /*webpackPreload: true*/
-      "@/pages/FirstPage"
-    )
+      '@/pages/FirstPage'
+    ),
 );
 
 export default [
   {
-    path: "/firstPage",
+    path: '/firstPage',
     element: <FirstPage />,
   },
 ];
