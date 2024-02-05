@@ -1,4 +1,4 @@
-import { Provider, atom, useAtom, useSetAtom } from 'jotai';
+import { atom } from 'jotai';
 
 export type Todo = {
   name: string;
